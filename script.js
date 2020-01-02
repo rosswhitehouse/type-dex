@@ -4,15 +4,32 @@ let searchTerm, searchUrl, pokemon, effectivenessByType;
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   searchTerm = e.target['name'].value.toLowerCase();
-  searchUrl = `https://pokeapi.co/api/v2/pokemon/${searchTerm}`;
 
-  let res = await fetch(searchUrl)
+  document.getElementById('error').classList.add('hide');
+  getPokemon(searchTerm)
+    .catch(e => {
+      document.getElementById('error').classList.remove('hide');
+    });
+  // try {
+  //   let res = await fetch(searchUrl).catch(e => console.log('problem: ', e))
 
-  if (res.ok) {
-    pokemon = await res.json()
-    populatePokemon(pokemon);
-  }
+  //   if (res.ok) {
+  //     pokemon = await res.json()
+  //     populatePokemon(pokemon);
+  //   }
+  // } catch (e) {
+  //   console.log('problem: ', e)
+  // }
 })
+
+const getPokemon = async (name) => {
+  let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`);
+  if (res.status === 200) {
+    let json = await res.json();
+    return json;
+  }
+  throw new Error(res.status);
+}
 
 const populatePokemon = (pokemon) => {
   document.getElementById('pkmn-name').innerHTML = pokemon.name;

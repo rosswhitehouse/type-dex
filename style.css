@@ -48,6 +48,16 @@ form input[type="submit"] {
   border-radius: 0px;
 }
 
+#error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#error.hide {
+  display: none;
+}
+
 h2 {
   margin: 0;
   text-transform: capitalize;
