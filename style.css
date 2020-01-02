@@ -43,6 +43,7 @@ form input[type="submit"] {
   background: #eee;
   vertical-align: top;
   font-size: 25px;
+  -webkit-appearance: none;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
