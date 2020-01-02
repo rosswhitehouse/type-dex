@@ -43,7 +43,7 @@ form input[type="submit"] {
   background: #eee;
   vertical-align: top;
   font-size: 25px;
-  border-radius: none;  
+  border-radius: 0;  
 }
 
 h2 {
