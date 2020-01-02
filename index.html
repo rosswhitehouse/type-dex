@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <form id="searchform">
+      <input type="text" name="name" value="pikachu" />
+      <input type="submit" value="🔍" />
+    </form>
+
+    <div id="pokemon">
+      <header>
+        <img id="pkmn-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" />
+        <h2 id="pkmn-name">Pikachu</h2>
+      </header>
+      <section>
+        <div class="types">
+          <h3>TYPE</h3>
+          <ul id="pkmn-types">
+            <li class="electric">electric</li>
+          </ul>
+        </div>
+      </section>
+      <section class="weaknesses">
+        <h3>WEAK TO</h3>
+        <ul id="pkmn-types-double">
+          <li class="ground">ground</li>
+        </ul>
+      </section>
+      <section class="strengths">
+        <h3>STRONG AGAINST</h3>
+        <ul id="pkmn-types-half">
+          <li class="flying">flying</li>
+          <li class="steel">steel</li>
+          <li class="electric">electric</li>
+        </ul>
+      </section>
+      <section class="immunities">
+        <h3>IMMUNE TO</h3>
+        <ul id="pkmn-types-none">
+          <li class="none">none</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

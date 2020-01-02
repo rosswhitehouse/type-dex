@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FF0000;
+  padding: 20px;
+  font-family: 'Fira Code', monospace;
+}
+
+main {
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#pokemon {
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+form input[name="name"] {
+  width: calc(100% - 50px);
+  margin: 0;
+  padding: 0 10px;
+  font-size: 28px;
+  line-height: 49px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-family: inherit;
+}
+
+form input[type="submit"] {
+  width: 50px;
+  padding: 0;
+  border: none;
+  height: 50px;
+  background: #eee;
+  vertical-align: top;
+  font-size: 25px;  
+}
+
+h2 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+header {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+header img {
+  width: 50%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-transform: uppercase;
+  font-size: 11px;
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+li.normal {
+  background: #A8A878;
+}
+
+li.fighting {
+  background: #C03028;
+}
+
+li.rock {
+  background: #B8A038;
+}
+
+li.ground {
+  background: #E0C068;
+}
+
+li.poison {
+  background: #A040A0;
+}
+
+li.flying {
+  background: #A890F0;
+}
+
+li.fire {
+  background: #F08030;
+}
+
+li.grass {
+  background: #78C850;
+}
+
+li.water {
+  background: #6890F0;
+}
+
+li.dragon {
+  background: #7038F8;
+}
+
+li.electric {
+  background: #F8D030;
+}
+
+li.psychic {
+  background: #F85888;
+}
+
+li.bug {
+  background: #A8B820;
+}
+
+li.ghost {
+  background: #705898;
+}
+
+li.ice {
+  background: #98D8D8;
+}
+
+li.dark {
+  background: #705848;
+}
+
+li.fairy {
+  background: #EE99AC;
+}
+
+li.steel {
+  background: #B8B8D0;
+}
+
+li.none {
+  background: black;
+}
