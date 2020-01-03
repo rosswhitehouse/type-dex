@@ -7,19 +7,11 @@ form.addEventListener('submit', async (e) => {
 
   document.getElementById('error').classList.add('hide');
   getPokemon(searchTerm)
+    .then(populatePokemon)
     .catch(e => {
       document.getElementById('error').classList.remove('hide');
     });
-  // try {
-  //   let res = await fetch(searchUrl).catch(e => console.log('problem: ', e))
-
-  //   if (res.ok) {
-  //     pokemon = await res.json()
-  //     populatePokemon(pokemon);
-  //   }
-  // } catch (e) {
-  //   console.log('problem: ', e)
-  // }
+  console.log(pokemon)
 })
 
 const getPokemon = async (name) => {
